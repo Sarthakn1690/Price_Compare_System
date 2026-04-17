@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  # Python Scraper Service
+  scraper-service:
+    build: 
+      context: ./scraper-service
+    ports:
+      - "8000:8000"
+    restart: always
+
+  # Java Backend (Spring Boot)
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - SCRAPER_SERVICE_URL=http://scraper-service:8000
+    depends_on:
+      - scraper-service
+    restart: always
+
+  # Frontend (Static build or Dev serve)
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8080/api
+    depends_on:
+      - backend

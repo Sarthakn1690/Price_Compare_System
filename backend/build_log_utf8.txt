@@ -1,0 +1,6 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.pricecomparison:price-comparison-backend >------------
+[INFO] Building price-comparison-backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------

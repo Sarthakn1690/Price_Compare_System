@@ -1,0 +1,48 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< com.pricecomparison:price-comparison-backend >------------
+[INFO] Building price-comparison-backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ price-comparison-backend ---
+[INFO] Deleting C:\Users\user\SEPM\backend\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ price-comparison-backend ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ price-comparison-backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 40 source files with javac [debug release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/user/SEPM/backend/src/main/java/com/pricecomparison/service/PriceTrackingService.java:[33,19] cannot find symbol
+  symbol:   class PriceAlertRepository
+  location: class com.pricecomparison.service.PriceTrackingService
+[ERROR] /C:/Users/user/SEPM/backend/src/main/java/com/pricecomparison/service/PriceTrackingService.java:[23,1] cannot find symbol
+  symbol:   class PriceAlertRepository
+  location: class com.pricecomparison.service.PriceTrackingService
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.315 s
+[INFO] Finished at: 2026-03-18T21:58:05+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project price-comparison-backend: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/user/SEPM/backend/src/main/java/com/pricecomparison/service/PriceTrackingService.java:[33,19] cannot find symbol
+[ERROR]   symbol:   class PriceAlertRepository
+[ERROR]   location: class com.pricecomparison.service.PriceTrackingService
+[ERROR] /C:/Users/user/SEPM/backend/src/main/java/com/pricecomparison/service/PriceTrackingService.java:[23,1] cannot find symbol
+[ERROR]   symbol:   class PriceAlertRepository
+[ERROR]   location: class com.pricecomparison.service.PriceTrackingService
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
