@@ -92,7 +92,6 @@ export default function PriceComparison({ prices, bestPrice, productImage, statu
                 )}
               </p>
               {/* DEBUG — remove after testing */}
-              <p className="mt-1 text-xs text-yellow-400 truncate">{item.productUrl || "NO URL FROM BACKEND"}</p>
             </div>
 
             {/* Button */}
