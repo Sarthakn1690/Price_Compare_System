@@ -145,7 +145,7 @@ export default function Home() {
           transition={{ delay: 0.1 }}
           className="font-display text-3xl uppercase tracking-tight text-white sm:text-4xl md:text-5xl"
         >
-          Compare prices<span className="text-accent">.</span>
+          Compare prices<span className="text-accent"></span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
