@@ -37,7 +37,7 @@ api.interceptors.response.use(
 
     // Handle Network Errors
     if (!error.response && error.code === 'ERR_NETWORK') {
-      const msg = "Cannot connect to server. Make sure the backend is running on port 9090.";
+      const msg = `Cannot connect to ${API_BASE}`;
       window.dispatchEvent(new CustomEvent('app-toast', { detail: { message: msg, type: 'error' } }));
     }
 
